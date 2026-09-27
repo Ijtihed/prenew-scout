@@ -1,0 +1,23 @@
+node_modules/
+.next/
+.next-build/
+*.tsbuildinfo
+next-env.d.ts
+dist/
+
+# Crawler database: large, binary and rewritten constantly. The app reads the export in app/public/data/.
+data/*.db
+data/*.db-*
+app/public/data/*.tmp
+
+__pycache__/
+*.log
+.env*
+.DS_Store
+
+# Personal and partner data stays on this machine: creator emails and past-partner flags, Prenew's
+# collaboration sheet, partner names used as crawler seeds, and team photos.
+app/public/data/private.json
+app/public/data/past-collabs.json
+app/public/team/
+data/partners.json
